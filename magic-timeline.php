@@ -56,7 +56,7 @@ spl_autoload_register(__NAMESPACE__ . "\\autoload");
     If not, see http://www.gnu.org/licenses/gpl-3.0.html
 */
 
-$MagicTimeline_minimalRequiredPhpVersion = '5.0';
+$MagicTimeline_minimalRequiredPhpVersion = '5.4';
 
 /**
  * Check the PHP version and give a useful error message if the user's version is less than the required version
@@ -109,5 +109,5 @@ MagicTimeline_i18n_init();
 if (MagicTimeline_PhpVersionCheck()) {
     // Only load and run the init function if we know PHP version can parse it
     include_once('magic-timeline_init.php');
-    MagicTimeline_init(__FILE__);
+    WordWrap_init(__DIR__);
 }
