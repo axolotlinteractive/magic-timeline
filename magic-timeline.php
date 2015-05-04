@@ -11,6 +11,23 @@
 
 namespace MagicTimeline;
 
+add_action( 'admin_init', 'has_word_wrap' );
+function has_word_wrap() {
+    if ( is_admin() && current_user_can( 'activate_plugins' ) &&  !is_plugin_active( 'word-wrap/word-wrap.php' ) ) {
+        add_action( 'admin_notices', 'child_plugin_notice' );
+
+        deactivate_plugins( plugin_basename( __FILE__ ) );
+
+        if ( isset( $_GET['activate'] ) ) {
+            unset( $_GET['activate'] );
+        }
+    }
+}
+
+function child_plugin_notice(){
+    ?><div class="error"><p>Sorry, but Child Plugin requires the Parent plugin to be installed and active.</p></div><?php
+}
+
 function autoload($className) {
     $fileName = str_replace("MagicTimeline\\", "", $className);
     if(file_exists(__DIR__ . "/classes/" . $fileName . ".php"))
