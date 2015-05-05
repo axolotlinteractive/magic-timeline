@@ -1,0 +1,7 @@
+{
+  "pluginName" : "magic-timeline",
+  "rootNameSpace" : "WordWrap",
+  "LifeCycle" : {
+    "className" : "Plugin"
+  }
+}
