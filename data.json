@@ -1,0 +1,90 @@
+{
+	timeline_title: "Tony Foster's Wilderness Journeys, 1982-2015",
+	top_image: "http://images.thefoster.org/2015/05/04190507/timeline-map.png",
+	top_image_alt: "map",
+	timeline_entry: [
+		{
+			time_period: "1982",
+			title: "Travels without a Donkey in the Cévennes",
+			description: "retraces the steps of Robert Louis Stevenson on his travels through the French Pyrenees as documented in his book Travels with a Donkey in the Cévennes (1879)."
+		},
+		{
+			time_period: "1984",
+			title: "Thoreau’s Country: Walks and Canoe Journeys in New England",
+			description: "tracks Foster as he follows the path of one of his “philosophical heroes,” Henry David Thoreau, painting in Massachusetts, New Hampshire, and Maine."
+		},
+		{
+			time_period: "1986–87",
+			title: "John Muir’s High Sierra",
+			description: "helped to rekindle interest in John Muir through Foster’s great appreciation for America’s national parks. The exhibition became instrumental in the formation of the John Muir Trust in Scotland."
+		},
+		{
+			time_period: "1988–89",
+			title: "Exploring the Grand Canyon",
+			description: "chronicles Foster’s travels through the Grand Canyon as he hiked most of its four hundred miles of trails to paint its magnificent views and complex geology."
+		},
+		{
+			time_period: "1990–94",
+			title: "Arid Lands: Watercolour Diaries of Journeys across Deserts",
+			description: "highlights the often unappreciated beauty of the deserts of California, Nevada, Arizona, New Mexico, and Mexico."
+		},
+		{
+			time_period: "1991–93",
+			title: "Rain forest Diaries: Watercolours from Costa Rica",
+			description: "explores the lush wilderness of untouched cloud forests. The journey challenged Foster with mud, rain, insects, and the intricacies of painting green on green."
+		},
+		{
+			time_period: "1993–94",
+			title: "Wilderness Journeys: Watercolour Diaries of the Idaho Rockies",
+			description: "explores the distinctive characteristics of each of the parallel ranges that make up the Rocky Mountains in Idaho."
+		},
+		{
+			time_period: "1996–97",
+			title: "Ice and Fire: Watercolour Diaries of Volcano Journeys",
+			description: "showcases Foster’s travels to Montserrat, Hawaii, the Andes, the Cascades, and California, as he paints active volcanoes and icy mountains."
+		},
+		{
+			time_period: "1998–99",
+			title: "After Lewis and Clark: Explorer Artists and the American West",
+			description: "examines a changing landscape as Foster retraces the footsteps of Lewis and Clark in Montana, Idaho, and Washington, seeking to paint wild places along the route."
+		},
+		{
+			time_period: "1998–2002",
+			title: "WaterMarks: Watercolour Diaries from Swamps to Icebergs",
+			description: "explores water in all its forms, including Arctic icebergs, Yellowstone geysers, the swamps of Georgia and Florida, and the waterfalls of Guyana"
+		},
+		{
+			time_period: "2002",
+			title: "The Whole Salmon",
+			description: "features a painting for each day of Foster’s 415-mile rafting trip down Idaho’s beautiful Salmon River, from its source to its confluence."
+		},
+		{
+			time_period: "2004–7",
+			title: "Searching for a Bigger Subject: Watercolour Diaries from Everest and the Grand Canyon",
+			description: "looks at two of the world’s most awe-inspiring natural wonders: Mount Everest and the Grand Canyon. Foster drew on all his mental and physical resources as well as his artistic skill to document these iconic landmarks. He endured great adversity to become the only person ever to paint all three sides of Everest."
+		},
+		{
+			time_period: "2006",
+			title: "Rocky Days",
+			description: "documents a series of short hiking trips in the Idaho Rockies, capturing the region’s abundant natural beauty."
+		},
+		{
+			time_period: "2009",
+			title: "Secret Sites",
+			description: "is Foster’s highly personal tribute to the friendships that sustain him on his journeys. Each of the ten works features a favorite secret site of his Idaho supporters. Maps of the locations remain sealed inside the frames."
+		},
+		{
+			time_period: "2010–12",
+			title: "Sacred Places: Watercolour Diaries from the American Southwest",
+			description: "documents Foster’s research and travel to the Four Corners region of the American Southwest as he painted landscapes deemed sacred by Native Americans, Catholics, New Age practitioners, and Mormons."
+		},
+		{
+			time_period: "2011–15",
+			title: "In the Eye of the Beholder: Searching for Beauty in Wild Places",
+			description: "questions the abandonment of beauty in contemporary art by exploring the world’s most beautiful wildernesses."
+		}
+
+	],
+	bottom_image: "http://images.thefoster.org/2015/05/11180536/add5a6d6-f7d5-11e4-9b7a-2cd345f0a8f4.jpg",
+	bottom_image_alt: "3 People"
+}
