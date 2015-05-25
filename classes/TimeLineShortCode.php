@@ -10,6 +10,8 @@ namespace MagicTimeline;
 
 
 use WordWrap\ShortCodeScriptLoader;
+use WordWrap\View\View;
+use WordWrap\View\ViewCollection;
 
 class TimeLineShortCode extends ShortCodeScriptLoader{
 
@@ -18,7 +20,28 @@ class TimeLineShortCode extends ShortCodeScriptLoader{
      * @return string shortcode content
      */
     public function handleShortcode($atts) {
-        return "hello world";
+        $str = file_get_contents(__DIR__ . "/../data.json");
+        $json = json_decode($str);
+
+        $collection = new ViewCollection($this->lifeCycle, "front_end_container");
+
+        $collection->setTemplateVar("timeline_title", $json->timeline_title);
+        $collection->setTemplateVar("top_image", $json->top_image);
+        $collection->setTemplateVar("top_image_alt", $json->top_image_alt);
+        $collection->setTemplateVar("bottom_image", $json->bottom_image);
+        $collection->setTemplateVar("bottom_image_alt", $json->bottom_image_alt);
+
+        foreach($json->timeline_entry as $entry) {
+            $entryView = new View($this->lifeCycle, "front_end_entry");
+
+            $entryView->setTemplateVar("time_period", $entry->time_period);
+            $entryView->setTemplateVar("title", $entry->title);
+            $entryView->setTemplateVar("description", $entry->description);
+
+            $collection->addChildView("timeline_entry", $entryView);
+        }
+
+        return $collection->export();
     }
 
     /**
