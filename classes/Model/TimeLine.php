@@ -14,7 +14,7 @@ class TimeLine extends BaseModel {
     /**
      * @var string title of this particular TimeLine
      */
-    public $timeline_title;
+    public $title;
 
     /**
      * @var string the image that appears at the top of this TimeLine
@@ -52,6 +52,10 @@ class TimeLine extends BaseModel {
      * @return array
      */
     public static function get_fields(){
-        // TODO: Implement get_fields() method.
+        return [
+            "title" => "VARCHAR(120)",
+            "top_image" => "VARCHAR(255)",
+            "top_image_alt" => "VARCHAR(255)"
+        ];
     }
 }

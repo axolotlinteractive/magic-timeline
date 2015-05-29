@@ -59,6 +59,11 @@ class Entry extends BaseModel{
      * @return array
      */
     public static function get_fields() {
-        // TODO: Implement get_fields() method.
+        return [
+            "time_period" => "VARCHAR(60)",
+            "title" => "VARCHAR(120)",
+            "description" => "TEXT",
+            "time_line_id" => "INT(11) UNSIGNED NOT NULL"
+        ];
     }
 }
