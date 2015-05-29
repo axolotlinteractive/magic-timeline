@@ -5,7 +5,7 @@
  * Date: 5/29/15
  * Time: 4:32 PM
  */
-namespace MagicTimeline\Model;
+namespace MagicTimeLine\Model;
 
 use \WordWrap\ORM\BaseModel;
 

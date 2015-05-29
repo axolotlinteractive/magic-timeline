@@ -9,7 +9,7 @@
    License: GPLv3
   */
 
-namespace MagicTimeline;
+namespace MagicTimeLine;
 
 add_action( 'admin_init', 'has_word_wrap' );
 function has_word_wrap() {
@@ -29,7 +29,7 @@ function child_plugin_notice(){
 }
 
 function autoload($className) {
-    $fileName = str_replace("MagicTimeline\\", "", $className);
+    $fileName = str_replace("MagicTimeLine\\", "", $className);
     if(file_exists(__DIR__ . "/classes/" . $fileName . ".php"))
         require(__DIR__ . "/classes/" . $fileName . ".php");
 }

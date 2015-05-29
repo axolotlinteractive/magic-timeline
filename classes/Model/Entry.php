@@ -6,7 +6,7 @@
  * Time: 4:34 PM
  */
 
-namespace MagicTimeline\Model;
+namespace MagicTimeLine\Model;
 
 
 use WordWrap\ORM\BaseModel;

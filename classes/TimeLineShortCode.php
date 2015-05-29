@@ -6,7 +6,7 @@
  * Time: 8:15 PM
  */
 
-namespace MagicTimeline;
+namespace MagicTimeLine;
 
 
 use WordWrap\ShortCodeScriptLoader;

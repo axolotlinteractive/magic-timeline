@@ -1,5 +1,5 @@
 <?php
-namespace MagicTimeline;
+namespace MagicTimeLine;
 
 use WordWrap\LifeCycle;
 
