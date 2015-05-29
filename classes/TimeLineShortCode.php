@@ -9,6 +9,8 @@
 namespace MagicTimeLine;
 
 
+use MagicTimeLine\Model\Entry;
+use MagicTimeLine\Model\TimeLine;
 use WordWrap\ShortCodeScriptLoader;
 use WordWrap\View\View;
 use WordWrap\View\ViewCollection;
@@ -20,18 +22,18 @@ class TimeLineShortCode extends ShortCodeScriptLoader{
      * @return string shortcode content
      */
     public function handleShortcode($atts) {
-        $str = file_get_contents(__DIR__ . "/../data.json");
-        $json = json_decode($str);
+
+        $timeLine = TimeLine::find_one($atts["id"]);
 
         $collection = new ViewCollection($this->lifeCycle, "front_end_container");
 
-        $collection->setTemplateVar("timeline_title", $json->timeline_title);
-        $collection->setTemplateVar("top_image", $json->top_image);
-        $collection->setTemplateVar("top_image_alt", $json->top_image_alt);
-        $collection->setTemplateVar("bottom_image", $json->bottom_image);
-        $collection->setTemplateVar("bottom_image_alt", $json->bottom_image_alt);
+        $collection->setTemplateVar("timeline_title", $timeLine->title);
+        $collection->setTemplateVar("top_image", $timeLine->top_image);
+        $collection->setTemplateVar("top_image_alt", $timeLine->top_image_alt);
 
-        foreach($json->timeline_entry as $entry) {
+        $entries = Entry::find_for_timeline($timeLine);
+
+        foreach($entries as $entry) {
             $entryView = new View($this->lifeCycle, "front_end_entry");
 
             $entryView->setTemplateVar("time_period", $entry->time_period);
