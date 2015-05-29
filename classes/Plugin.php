@@ -1,6 +1,8 @@
 <?php
 namespace MagicTimeLine;
 
+use MagicTimeLine\Model\Entry;
+use MagicTimeLine\Model\TimeLine;
 use WordWrap\LifeCycle;
 
 class Plugin extends LifeCycle {
@@ -53,10 +55,8 @@ class Plugin extends LifeCycle {
      * @return void
      */
     protected function installDatabaseTables() {
-        //        global $wpdb;
-        //        $tableName = $this->prefixTableName('mytable');
-        //        $wpdb->query("CREATE TABLE IF NOT EXISTS `$tableName` (
-        //            `id` INTEGER NOT NULL");
+        Entry::install_table($this);
+        TimeLine::install_table($this);
     }
 
     /**
