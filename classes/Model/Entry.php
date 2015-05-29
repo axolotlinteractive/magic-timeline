@@ -40,7 +40,7 @@ class Entry extends BaseModel{
      * @return string
      */
     public static function get_table(){
-        return "magic_time_line_entry";
+        return "wp_magic_time_line_entry";
     }
 
     /**
