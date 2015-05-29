@@ -66,4 +66,23 @@ class Entry extends BaseModel{
             "time_line_id" => "INT(11) UNSIGNED NOT NULL"
         ];
     }
+
+    /**
+     * @param TimeLine $timeLine
+     * @return Entry[] all entries for given timeline
+     */
+    public static function find_for_timeline(TimeLine $timeLine){
+        $SQL = "SELECT * FROM `" . static::get_table() . "` WHERE `time_line_id` = " . $timeLine->id;
+
+        global $wpdb;
+
+        $rows = $wpdb->get_results($SQL, ARRAY_A);
+
+        $entries = [];
+        foreach($rows as $row) {
+            $entries[] = new Entry($row);
+        }
+
+        return $entries;
+    }
 }
