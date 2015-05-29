@@ -12,6 +12,21 @@ use \WordWrap\ORM\BaseModel;
 class TimeLine extends BaseModel {
 
     /**
+     * @var string title of this particular TimeLine
+     */
+    public $timeline_title;
+
+    /**
+     * @var string the image that appears at the top of this TimeLine
+     */
+    public $top_image;
+
+    /**
+     * @var string the alt text used in this TimeLine
+     */
+    public $top_image_alt;
+
+    /**
      * Overwrite this in your concrete class. Returns the table name used to
      * store models of this class.
      *
