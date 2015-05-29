@@ -55,8 +55,8 @@ class Plugin extends LifeCycle {
      * @return void
      */
     protected function installDatabaseTables() {
-        Entry::install_table($this);
-        TimeLine::install_table($this);
+        Entry::install_table();
+        TimeLine::install_table();
     }
 
     /**
