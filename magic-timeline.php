@@ -11,7 +11,6 @@
 
 namespace MagicTimeLine;
 
-add_action( 'admin_init', 'has_word_wrap' );
 function has_word_wrap() {
     if ( is_admin() && current_user_can( 'activate_plugins' ) &&  !is_plugin_active( 'word-wrap/word-wrap.php' ) ) {
         add_action( 'admin_notices', 'child_plugin_notice' );
@@ -23,6 +22,7 @@ function has_word_wrap() {
         }
     }
 }
+add_action( 'admin_init', '\MagicTimeLine\has_word_wrap' );
 
 function child_plugin_notice(){
     ?><div class="error"><p>Sorry, but Child Plugin requires the Parent plugin to be installed and active.</p></div><?php
