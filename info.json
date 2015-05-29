@@ -3,5 +3,6 @@
   "rootNameSpace" : "MagicTimeLine",
   "LifeCycle" : {
     "className" : "Plugin"
-  }
+  },
+  "optionsPrefix" : "magic_time_line"
 }
