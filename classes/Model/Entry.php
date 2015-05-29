@@ -14,6 +14,26 @@ use WordWrap\ORM\BaseModel;
 class Entry extends BaseModel{
 
     /**
+     * @var string the text for when this entry occurred
+     */
+    public $time_period;
+
+    /**
+     * @var string the title of this entry
+     */
+    public $title;
+
+    /**
+     * @var string the description of this entry
+     */
+    public $description;
+
+    /**
+     * @var int the time line that this entry belongs to
+     */
+    public $time_line_id;
+
+    /**
      * Overwrite this in your concrete class. Returns the table name used to
      * store models of this class.
      *
