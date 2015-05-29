@@ -34,6 +34,11 @@ class Entry extends BaseModel{
     public $time_line_id;
 
     /**
+     * @var int the primary id of the time line
+     */
+    public $id;
+
+    /**
      * Overwrite this in your concrete class. Returns the table name used to
      * store models of this class.
      *

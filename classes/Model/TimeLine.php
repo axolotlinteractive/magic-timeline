@@ -27,6 +27,11 @@ class TimeLine extends BaseModel {
     public $top_image_alt;
 
     /**
+     * @var int the primary id of the time line
+     */
+    public $id;
+
+    /**
      * Overwrite this in your concrete class. Returns the table name used to
      * store models of this class.
      *
