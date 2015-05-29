@@ -1,6 +1,6 @@
 {
   "pluginName" : "magic-timeline",
-  "rootNameSpace" : "MagicTimeline",
+  "rootNameSpace" : "MagicTimeLine",
   "LifeCycle" : {
     "className" : "Plugin"
   }
