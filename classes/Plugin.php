@@ -83,7 +83,8 @@ class Plugin extends LifeCycle {
 
         // Add options administration page
         // http://plugin.michael-simpson.com/?page_id=47
-        add_action('admin_menu', array(&$this, 'addSettingsSubMenuPage'));
+     //   add_action('admin_menu', array(&$this, 'addSettingsSubMenuPage'));
+     //   $page_cat = \add_menu_page('Theme page title', 'Magic Time Line', 'manage_options', 'adminUI', 'adminUI', 'dashicons-images-alt2');
 
         // Example adding a script & style just for the options administration page
         // http://plugin.michael-simpson.com/?page_id=47
@@ -113,6 +114,10 @@ class Plugin extends LifeCycle {
 
         // Register AJAX hooks
         // http://plugin.michael-simpson.com/?page_id=41
+
+    }
+
+    function adminUI() {
 
     }
 
